@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Brown Regular";
+  src: url("/fonts/brown-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brown Bold";
+  src: url("/fonts/brown-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brown Light";
+  src: url("/fonts/brown-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.5s forwards;
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.5s forwards;
+}
+
+.square-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square-button:hover {
+  background-color: #f3f4f6;
+}
+
+.custom-placeholder::placeholder {
+  font-family: 'Brown Light', sans-serif;
+  color: black;
+
+}
